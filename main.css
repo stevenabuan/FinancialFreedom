@@ -119,8 +119,13 @@ body {
   box-shadow: 1px 1px 1px;
 }
 
+.btn-consult:hover {
+  color: #051367;
+}
+
 .btn-learn-more {
   background-color: #1095c1;
+  box-shadow: 1px 1px 1px;
 }
 
 .card-services {
