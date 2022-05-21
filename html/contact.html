@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../main.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav
+      class="navbar-main navbar navbar-expand-lg navbar-light bg-light position-sticky top-0"
+      id="nav-bar"
+    >
+      <div class="container">
+        <button
+          type="button"
+          class="btn btn-light btn-floating btn-lg"
+          id="btn-back-to-top"
+        >
+          <i class="fas fa-angles-up"></i>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="../images/logo-white.png"
+            alt="FF-logo"
+            class="main-logo"
+            align-top
+          />
+        </a>
+        <button
+          class="navbar-toggler d-flex d-lg-none flex-column collapsed justify-content-around"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto text-end fs-5">
+            <li class="nav-item dropdown px-4">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./financial-planning.html"
+                    >Financial Planning</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./investment-planning.html"
+                    >Investment Planning</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./retirement-planning.html"
+                    >Retirement Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white" href="../html/glossary.html"
+                >Glossary</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white" href="../html/contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white" href="../html/about.html"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <p class="display-6 text-center my-5 ">Let's start a conversation</p>
+      <div class="row d-flex flex-column align-items-center">
+        <div class="col-lg-6">
+          <div class="container rounded-3 contact-form">
+            <form class="mb-5">
+              <div class="row d-flex">
+                <div class="col">
+                  <div class="input-group mb-3 mt-5">
+                    <input
+                      type="text"
+                      class="form-control btn-lg"
+                      placeholder="First Name"
+                      aria-label="Username"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="input-group mb-3 mt-5">
+                    <label for="validationCustom01" class="form-label"></label>
+                    <input
+                      type="text"
+                      class="form-control btn-lg"
+                      placeholder="Last Name"
+                      aria-label="Username"
+                      id="validationCustom01"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input
+                  type="email"
+                  class="form-control btn-lg"
+                  id="exampleInputEmail1"
+                  placeholder="Email address"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <div class="row d-flex">
+                <div class="col">
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control btn-lg mt-3"
+                      placeholder="Company (optional)"
+                      aria-label="Username"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control btn-lg mt-3"
+                      placeholder="Website URL (optional)"
+                      aria-label="Username"
+                    />
+                  </div>
+                </div>
+              </div>
+              <select
+                class="form-select btn-lg mt-3"
+                aria-label="Default select example"
+              >
+                <option selected>Choose a service</option>
+                <option value="1">Financial Planning</option>
+                <option value="2">Investment Planning</option>
+                <option value="3">Retirement Planning</option>
+              </select>
+              <div class="mb-3">
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label"
+                ></label>
+                <textarea
+                  class="form-control btn-lg mt-3"
+                  id="exampleFormControlTextarea1"
+                  rows="5"
+                  placeholder="Subject/Message"
+                ></textarea>
+              </div>
+              <div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="invalidCheck">
+                    I agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="invalidCheck">
+                    Privacy Policy
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-warning my-5 btn-lg px-5">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 justify-self-center text-center">
+          <p class="display-6">Get in touch</p>
+          <p class="pt-3 fs-5">
+            <i class="bi bi-telephone">
+              +639123456789
+              <i class="bi bi-clipboard-check" onclick="copyNumber()"></i>
+            </i>
+          </p>
+          <p class="fs-5">
+            <i class="bi bi-envelope">
+              financialfreedom@email.com
+              <i class="bi bi-clipboard-check" onclick="copyEmail()"></i>
+            </i>
+          </p>
+          <p class="mt-2 fs-5"><i class="bi bi-geo-alt"></i> Location</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8975157051314!2d121.04936386590474!3d14.547852816233677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9853bdcdc97%3A0xbf02f4c8d3fc9d75!2sBGC%20TAGUIG!5e0!3m2!1sen!2sph!4v1652011100807!5m2!1sen!2sph"
+            width="1000"
+            height="450"
+            class="mb-5 g-map justify-self-center"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid footer-section">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb pt-4 d-flex justify-content-center">
+          <li class="breadcrumb-item">
+            <a href="#" class="text-decoration-none text-light"
+              >Privacy Statement</a
+            >
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#" class="text-decoration-none text-light"
+              >Terms of Use</a
+            >
+          </li>
+        </ol>
+      </nav>
+      <div class="container">
+        <hr class="text-white" />
+      </div>
+      <div class="d-flex justify-content-center mb-2">
+        <a href="#"><i class="fa-brands fa-facebook-square fa-xl text-white mx-2"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-xl text-white mx-2"></i></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin fa-xl text-white mx-2"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus-square fa-xl text-white mx-2"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter-square fa-xl text-white mx-2"></i></a>
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="align-self-center text-white">Financial Freedom</span>
+      </div>
+      <p class="text-center text-white pb-3 m-0">
+        Copyright &copy; 2022 FF, All rights reserved
+      </p>
+    </footer>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
