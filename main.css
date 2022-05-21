@@ -126,18 +126,17 @@ body {
 .card-services {
   transition: 200ms;
 }
+
 .card-services:hover {
   margin-top: -10px;
   transform: translateY(-20px);
 }
 
-/* footer-icon */
 .bi-clipboard-check,
 .bi-linkedin {
   cursor: pointer;
 }
 
-/* about us */
 .about-us-text {
   text-indent: 2rem;
 }
@@ -186,7 +185,7 @@ body {
   }
 
   .g-map {
-    width: 350px;
+    width: 320px;
     height: 250px;
   }
 
@@ -202,11 +201,14 @@ body {
     padding: 8px;
     font-size: 1rem;
   }
+  .help-btn {
+    padding: 5px;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
   .g-map {
-    width: 720px;
+    width: 650px;
     height: 350px;
   }
 }
