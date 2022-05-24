@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #0dceda;
+  --secondary-color: #051367;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -97,7 +102,11 @@ body {
 .footer-section,
 .our-team,
 .contact-form {
-  background-image: linear-gradient(to right, #0dceda 10%, #051367);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color) 10%,
+    var(--secondary-color)
+  );
 }
 
 .main-content {
@@ -117,10 +126,6 @@ body {
 .btn-consult,
 .btn-learn-more {
   box-shadow: 1px 1px 1px;
-}
-
-.btn-consult:hover {
-  color: #051367;
 }
 
 .btn-learn-more {
@@ -161,7 +166,7 @@ body {
 
 .glossary a {
   text-decoration: none;
-  color: #000;
+  color: #323232;
   line-height: 2.5rem;
 }
 
